@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+	#title{
+		width: 600px;
+		height: 100px;
+	}
+	
+	#body{
+		width: 600px;
+		height: 100px;
+		resize: none;
+	}
+	
+</style>
+
+</head>
+<body>
+	<form method="post" action="result.html">
+	<!-- placeholder는 회색으로 써야할 내용 보여주고 내용을 적게 되면 사라진다 -->
+		<input type="text" name="title" id="title" placeholder="제목을 입력하세요!" required ><br>
+		<textarea name="body" id="body" cols="30" rows="10" placeholder="내용을 입력하세요" required></textarea><br>
+		<input type="submit" value="제출">
+	</form>
+</body>
+</html>

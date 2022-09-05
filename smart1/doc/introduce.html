@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자기소개서</title>
+<style type="text/css">
+	/* classs  */
+	.sp01 {	
+		display: inline-block;
+		font-size: 150%;
+		font-weight: bold;
+		color: #880032;
+		font-family: "TRWindExtraBold", sans-serif;
+	}
+	
+	/* id */
+	#n1, #n2, #n3, #n4 {
+		display: inline-block;
+		font-size: 150%;
+		font-weight: bold;
+		font-family: "TRWindRegular", sans-serif;
+	}
+	
+	/* 폰트 */
+	@font-face {
+	    font-family: "TRWindExtraBold";
+	    font-style: normal;
+	    font-weight: 400;
+	    src: url('TRWindExtraBold.woff') format('woff');
+    }
+    
+    @font-face {
+	    font-family: "TRWindRegular";
+	    font-style: normal;
+	    font-weight: 400;
+	    src: url('TRWindRegular.woff') format('woff');
+    }
+    
+    /* 이미지 위에 글자 */
+    .top {
+		margin: 0px auto;
+		position: relative;
+		padding: 0;
+		display: inline-block;
+	}
+	.top_img img {
+		width: 100%;
+		vertical-align: middle;
+		padding: 0;
+	}
+	.top_text {
+		padding: 5px 10px;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+		padding: 0;
+	}
+	
+</style>
+</head>
+<body>
+	<header>
+		<center>
+		<div class="top" >
+			<div class="top_img" style="display: inline-block; width: 1200px; height: 90px; text-align: center; background-color: #3296D7; border: 1px solid gray;">
+				<img src="./img/top_img.jpg" width="100%" height="100%">
+			</div>
+			<div class="top_text">
+				<h1 style="font-size: 30pt">&lt;자기 소개&gt;</h1>
+			</div>
+		</div>
+		</center>
+	</header>
+	<section style="text-align: center; height: 550px;">
+		<article>
+			<div style="display: inline-block; width: 1200px; height: 700px; border: 1px solid gray;">
+				<nav style="height: 550px; background-color: #FFF064; float: left; margin: 0; padding: 0;">
+					<ul style="list-style: circle;">
+						<li style="text-align: left;"><a href="./introduce_main.html"><strong>대문</strong></a>
+							<ul style="list-style: square;">
+								<br>
+								<li><a href="javascript: alert('현재 페이지입니다.')"><strong>자기소개&nbsp;&nbsp;</strong></a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div style="display: inline-block; width: 20%; height: 550px; border: 1px; background-color: #50C8FF; float :left; margin: 0; padding: 0;">
+					<img src="./img/cat.jpg" width="100%" height="100%">
+				</div>
+				<div style="display: inline-block; width: 67%; height: 550px; background-color: #FAFAB4; text-align: left; float :left; margin: 0; padding: 0;">
+					<br><br>
+					<div>
+					<br><br>
+						<span class="sp01">&nbsp;&nbsp;#.&nbsp;이름&nbsp;:&nbsp;</span>
+						<div id="n1">김지수</div>
+					<br><br>
+						<span class="sp01">&nbsp;&nbsp;#.&nbsp;생일&nbsp;:&nbsp;</span>
+						<div id="n2">09월 12일</div>
+					<br><br>
+						<span class="sp01">&nbsp;&nbsp;#.&nbsp;사는곳&nbsp;:&nbsp;</span>
+						<div id="n3">경기도 부천시 역곡</div>
+					<br><br>
+						<span class="sp01">&nbsp;&nbsp;#.&nbsp;학교&nbsp;:&nbsp;</span>
+						<div id="n4">대학교 졸업(컴퓨터학과)</div>
+					<br><br>
+						<span class="sp01">&nbsp;&nbsp;#.&nbsp;취미&nbsp;:&nbsp;</span>
+						<div id="n4">소설보기(얼음과 불의 노래등 판타지소설)</div>
+					<br><br>
+						<span class="sp01">&nbsp;&nbsp;#.&nbsp;지원동기&nbsp;:&nbsp;</span>
+						<div id="n4">취업이 잘되는 업종이라서</div>	
+					<br><br>
+						<span class="sp01">&nbsp;&nbsp;#.&nbsp;하고싶은말&nbsp;:&nbsp;</span>
+						<div id="n4">서로 도와 가며 무사히 수료 했으면 합니다.</div>	
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<center>
+			<div style="display: inline-block; width: 1200px; height: 150px; border: 1px solid gray;">
+				<img src="./img/bottom.jpg" width="100%" height="100%">
+			</div>
+		</center>
+	</footer>
+</body>
+</html>
