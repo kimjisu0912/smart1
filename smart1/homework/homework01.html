@@ -11,7 +11,6 @@
 	}
 	.nav {
 		display: inline-block;
-		border: 1px solid green;
 		width: 100px;
 		height: 50px;
 		font-size: 16;
@@ -92,7 +91,7 @@
 	.left_story {
 		display: inline-block;
 	}
-	.left_runtime {
+	.left_runtime, .right_runtime {
 		display: inline-block;
 		border: 0.5px solid gray; 
 		padding: 3px;
@@ -106,7 +105,7 @@
 		background-color: black;
 		opacity: 0.7;	/* 배경투명도 설정 */
 	}
-	.left_arrow{
+	.left_arrow, .right_arrow{
 		display: inline-block;
 		position: relative; /* 위치조정 */
 		top: -50px;
@@ -120,29 +119,6 @@
 		display: inline-block;
 		position: relative; /* 위치조정 */
 		left: 15px;
-	}
-	.right_runtime {
-		display: inline-block;
-		border: 0.5px solid gray; 
-		padding: 3px;
-		width: 30px; 
-		height: auto; 
-		font-size: 13px;
-		color: white;
-		position: relative; 
-		left: 215px; 
-		top: -60px;
-		background-color: black;
-		opacity: 0.7;
-	}
-	.right_arrow{
-		display: inline-block;
-		position: relative; /* 위치조정 */
-		top: -50px;
-		left: -220px;
-		overflow: hidden; /* 이미지 부분만 나오게 하는 작업 */
-		height: 45px; 
-		width: 33px;
 	}
 	
 	.botall{
@@ -192,7 +168,8 @@
 					</div>
 				</div>
 			</div>
-			<nav><!-- 태그를 동그라미 모양으로 만들어서 사용 -->
+			<nav>
+				<!-- 태그를 동그라미 모양으로 만들어서 사용 -->
 				<span class="circle1"><span class="circle1_sp1"><strong>&lt;</strong></span></span>
 				<div style="display: inline-block; margin: 0; padding: 0;">
 					<ul>
@@ -205,8 +182,9 @@
 						<li><a href="#">책방</a></li>
 						<li><a href="#">패션뷰티</a></li>
 					</ul>
-				</div><!-- 이미지로 가져와서 부분 잘라와서 사용 -->
-				<span class="circle2"><span class="circle2_sp2"><img style="position: relative; top: -695px; left: -620px;" src="./img/sp_main_4f8ccb.png"></span></span>
+				</div>
+				<!-- 이미지로 가져와서 부분 잘라와서 사용 -->
+				<span class="circle2"><img style="position: relative; top: -695px; left: -620px;" src="./img/sp_main_4f8ccb.png"></span>
 			</nav>
 		</div>
 	</header>
@@ -311,7 +289,7 @@
 					<div class="botwrite" style="position: relative; left -10px; top: -10px;">
 						<span style="color: #FFC314;"><strong>레시피</strong></span><br>
 						<span><strong>라이스페이퍼요리 치즈어묵꼬치 사각어묵요리 집에서 맥주안주 만드는법</strong></span><br>
-						<span class="box">라이스페이퍼요리 치즈어묵꼬치 사각어묵요리 집에서 맥주안주 만드는법 몇일 전 인스타를 보다가 추전 피드에서 만들기는 간단하지만 맛있어 보이는 라이스페이퍼요리를 봣는데...</span>
+						<span class="box">라이스페이퍼요리 치즈어묵꼬치 사각어묵요리 집에서 맥주안주 만드는법 몇일 전 인스타를 보다가 추전 피드에서 만들기는 간단하지만 맛있어 보이는 라이스페이퍼요리를 봣는데 너무 맛이 있었어요 여러분도 만들어 보세요 ㅎㅎ</span>
 						<span>초대리 &#183;<span style="color: gray">3일 전</span></span><br>
 					</div>
 				</div>
@@ -323,7 +301,7 @@
 					<div class="botwrite" style="position: relative; left -10px; top: -10px;">
 						<span style="color: #FFC314;"><strong>레시피</strong></span><br>
 						<span><strong>박나래 어묵탕 끓이는법 소주안주 꼬치 어묵탕 레시피 매운어묵탕</strong></span><br>
-						<span class="box">박나래 어묵탕 끊이는법 소주안주 꼬치 어묵탕 레시피 매운 오뎅탕 끓이는법 사각어묵10장 가래떡 2줄 대파 썰은것 (1~2) 삻은달걀 1개 멸치 칼국수 라면 스프 2/3봉지 꽃게탕면...</span>
+						<span class="box">박나래 어묵탕 끊이는법 소주안주 꼬치 어묵탕 레시피 매운 오뎅탕 끓이는법 사각어묵10장 가래떡 2줄 대파 썰은것 (1~2) 삻은달걀 1개 멸치 칼국수 라면 스프 2/3봉지 꽃게탕면 레시피 입니다 여러분도 만들어 보세요 정말 맜있습니다</span>
 						<span>은솔희섭mom&#183;<span style="color: gray">1개월 전</span></span><br>
 					</div>
 				</div>
@@ -335,7 +313,7 @@
 					<div class="botwrite" style="position: relative; left -10px; top: -10px;">
 						<span style="color: #FFC314;"><strong>레시피</strong></span><br>
 						<span><strong>새송이버섯 버터 양념구이 술안주 요리(편스토랑 박솔미 레시피)</strong></span><br>
-						<span class="box">냉장고에 고기 구워 먹고 남은 새송이버섯. 평소 같으면 대충 썰어서 볶아 반찬으로 먹는 새송이버섯볶음을 만들었을 텐데 요즘 집에서 밥 먹는 일이 별로 없어 간단하게 먹을 술...</span>
+						<span class="box">냉장고에 고기 구워 먹고 남은 새송이버섯. 평소 같으면 대충 썰어서 볶아 반찬으로 먹는 새송이버섯볶음을 만들었을 텐데 요즘 집에서 밥 먹는 일이 별로 없어 간단하게 먹을 술 안주가 필요 했는데 여러분들에게도 추천 합니다 맜있는 버섯구이에요</span>
 						<span>백설기껌딱지 &#183;<span style="color: gray">1개월 전</span></span><br>
 					</div>
 				</div>
