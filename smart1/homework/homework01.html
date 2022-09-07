@@ -3,171 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <title>숙제</title>
-<style type="text/css">
-	/* 헤더 작업 시작 */
-	.header {
-		margin: 0 auto;
-		text-align: center;
-	}
-	.nav {
-		display: inline-block;
-		width: 100px;
-		height: 50px;
-		font-size: 16;
-		margin-right: -4; 
-		padding: 0;
-	}
-	
-	/* 네비게이션 목차 */
-	li {
-		float: left;
-		list-style:none; /* 목차를 가로로 */
-		margin: 0px;
-	}
-	li > a{
-		display: block; /* 블록처리 */
-		width: 113px; 
-		height: 50px;
-		background: white; 
-		color: 	#000000; 
-		border: 1px solid #dcdcdc; 
-		font-size: 12px; 
-		font-family: "돋움";
-		text-align: center;
- 		padding-top: 10px; 
-		text-decoration: none; /* 선으로 텍스트 꾸미는 속성 none는 a태그 밑줄 선을 만들지 않는다 */
-		line-height: 50px; /* 텍스트 높낮이 위치 조절 */
-	}
-	li > a > span {
-		display: block;
-	}
-	
-	/* 마우스 오버 했을때 이벤트 */
-	li > a:hover {
-		background: #FFC800; 
-		text-decoration: none;
-	} 
-	
-	/* 등그라미 버튼 */
-	.circle1 {
-		display: inline-block;
-		width: 30px;
-		height: 30px;
-		border: 1px solid gray;
-		border-radius: 50%;
-		box-shadow: 1px 1px 1px 1px rgba(100, 100, 100, 0.2);
-		position: relative; /* 위치조정 */
-		top: -23px;
-		left: 60px;
-		
-	}
-	.circle1_sp1 {
-		line-height: 25px;
-	}
-	.circle2 {
-		display: inline-block;
-		position: relative; /* 위치조정 */
-		top: -10px;
-		left: -30px;
-		overflow: hidden; /* 이미지 부분만 나오게 하는 작업 */
-		height: 35px; 
-		width: 40px;
-	}
-	
-	/* 헤더작업 끝 */
-	
-	/* 컨텐츠 시작 */
-	.content {
-		margin: 0 auto;
-		text-align: center;
-	}
-	.topstoryall{
-		display: inline-block;
-		width: 940px;
-		border-bottom: 1px solid gray;
-		position: relative; /* 위치조정 */
-		left: 13px;
-	}
-	.left_story {
-		display: inline-block;
-	}
-	.left_runtime, .right_runtime {
-		display: inline-block;
-		border: 0.5px solid gray; 
-		padding: 3px;
-		width: 30px; 
-		height: auto; 
-		font-size: 13px;
-		color: white;
-		position: relative; 
-		left: 215px; 
-		top: -60px;
-		background-color: black;
-		opacity: 0.7;	/* 배경투명도 설정 */
-	}
-	.left_arrow, .right_arrow{
-		display: inline-block;
-		position: relative; /* 위치조정 */
-		top: -50px;
-		left: -220px;
-		overflow: hidden; /* 이미지 부분만 나오게 하는 작업 */
-		height: 45px; 
-		width: 33px;
-	}	
-	
-	.right_story {
-		display: inline-block;
-		position: relative; /* 위치조정 */
-		left: 15px;
-	}
-	
-	.botall{
-		display: inline-block;
-	}
-	.bot_story{
-		text-align: center;
-		position: relative; /* 위치조정 */
-		left: 7px;
-	}
-	.botimg{
-		display: inline-block;
-		position: relative; /* 위치조정 */
-		top: 10px;
-	}
-	.botwrite{
-		display: inline-block;
-		width: 650px;
-		text-align: left;"
-	}
-	/* 특정단위 텍스트 자르기 */
-	.box{
-		white-space: normal;
-		display: -webkit-box;
-		-webkit-line-clamp: 2; /* 해당 숫자의 허용치를 넘을 시 자른다 */
-		-webkit-box-orient: vertical;
-		overflow:hidden;
-	}
-	/* 컨텐츠 끝 */
-	
-</style>
+<link type="text/css" rel="stylesheet" href="./css/homework.css">
 </head>
-
 <body>
 	<!-- 헤더 시작 -->
 	<header>
 		<div class="header">
-			<div>
+			<div class="headertit">
 				<div style="display: inline-block; position: relative; left: -230px;">
 					<div style="font-size: 10pt; display: inline-block;">
-						<strong>오늘 읽을만한 글</strong></div>&nbsp;<div style="font-size: 8pt; color: gray; display: inline-block;">주제별로 분류 된 다양한 글 모음</div>
+						<strong>오늘 읽을만한 글</strong></div>&nbsp;<div style="font-size: 8pt; color: gray; display: inline-block;">주제별로 분류 된 다양한 글 모음
 					</div>
+				</div>
 				<div style="display: inline-block; position: relative; left: 270px;">
 					<div style="font-size: 9pt; display: inline-block;">
 						<strong>671</strong></div><div style="font-size: 8pt; color: gray; display: inline-block;">개의 글 |
 						<img src="./img/gear.png" alt="톱니바퀴~" title="톱니바퀴" width="10" height="auto"> 관심주제 설정					
 					</div>
 				</div>
-			</div>
 			<nav>
 				<!-- 태그를 동그라미 모양으로 만들어서 사용 -->
 				<span class="circle1"><span class="circle1_sp1"><strong>&lt;</strong></span></span>
@@ -186,6 +39,7 @@
 				<!-- 이미지로 가져와서 부분 잘라와서 사용 -->
 				<span class="circle2"><img style="position: relative; top: -695px; left: -620px;" src="./img/sp_main_4f8ccb.png"></span>
 			</nav>
+			</div>
 		</div>
 	</header>
 	<!-- 헤더 종료 -->
@@ -202,7 +56,6 @@
 							<span class="left_runtime">7:25</span>
 							<span class="left_arrow"><img style="width: 596px; height: auto; position: relative; top: -500px; left: 0px;" src="./img/sp_main_4f8ccb.png"></span>
 						</div>
-						
 						<div class="left_write" style=" width: 450px; text-align: left;">
 							<span>
 								<a style="text-decoration: none; color: #FFC314;" href="javascript: alert('경로가 없어요~!')">[푸드클래스] 꽁불 요리연구가</a>
@@ -213,8 +66,7 @@
 							</span>
 							<br>
 							<span>
-								야채 듬뿍, 고기, 면, 소스 넣으면 끝 <br>
-								맛은 훌룡해요! 꼭 만들어 보세요!
+								야채 듬뿍, 고기, 면, 소스 넣으면 끝 <br>맛은 훌룡해요! 꼭 만들어 보세요!
 							</span>
 							<br>
 							<span style="font-size: 15px;">
@@ -228,7 +80,6 @@
 							<span class="right_runtime">8:25</span>
 							<span class="right_arrow"><img style="width: 596px; height: auto; position: relative; top: -500px; left: 0px;" src="./img/sp_main_4f8ccb.png"></span>
 						</div>
-						
 						<div class="right_write" style="width: 450px; text-align: left;">
 							<span>
 								<a style="text-decoration: none; color: #FFC314;" href="javascript: alert('경로가 없어요~!')">[오늘의 포드TV] 램블부부의 감성식탁</a>
@@ -239,16 +90,13 @@
 							</span>
 							<br>
 							<span>
-								다이어트 식단으로 좋은 식재료로 <br>
-								색감에 식감도 좋고 영양까지 챙겨요
-							</span>
-							<br>
+								다이어트 식단으로 좋은 식재료로 <br>색감에 식감도 좋고 영양까지 챙겨요
+							</span><br>
 							<span style="font-size: 15px;">
 								#다이어트 #김밥만들기
 							</span>
 						</div>
 					</div>
-					<p>
 				</div>
 				<div></div>
 			<!-- 상단 컨텐츠 끝-->
@@ -258,59 +106,54 @@
 				<div class="bot_story">
 					<div class="botimg">
 						<img style="display: block;" src="./img/con_sub1.jpg" alt="한국주택금융" title="한국주택금융공사" width="200px" height="auto">
-					</div>&nbsp;&nbsp;
-					<div class="botwrite" style="position: relative; left: -3px; top: 5px;">
-						<span style="color:gray;">한국주택금융공사 
-						<img src="./img/ad.png" alt="주택공사~" title="주택공사" width="30" height="auto"><img src="./img/x.png" alt="주택공사~" title="주택공사" width="20" height="auto"></span><br>
+					</div>
+					<div class="botwrite" style="position: relative; left: -5px; top: 3px;">
+						<div style="color:gray;">한국주택금융공사 
+						<img src="./img/ad.png" alt="주택공사~" title="주택공사" width="25" height="auto"><img src="./img/x.png" alt="주택공사~" title="주택공사" width="15" height="auto"></div>
 						<span><strong>안심전환대출로 금리고정! 행복고정!</strong></span><br>
-						<span>안심전환대출로 금리고정! 행복고정!</span><br>
-						<span>조기상환수수료도 없이 최저 3.7% 환승</span><br>
-						<span style="font-size: 13px; color:gray;">준법경영부 광고심의편(2022-0043, 2022.8.5)</span><br>
-						<span style="color:gray;">더알아보기></span><br>
+						<p style="margin: 0 auto;">안심전환대출로 금리고정! 행복고정!<br>조기상환수수료도 없이 최저 3.7% 환승</p>
+						<span style="font-size: 10px; color:gray;">준법경영부 광고심의편(2022-0043, 2022.8.5)</span><br>
+						<span style="font-size: 11px; color:gray;">더알아보기></span><br>
 					</div>
 				</div>
-				<p>
 				<div class="bot_story">
 					<div class="botimg">
 						<img style="display: block;" src="./img/con_sub2.jpg" alt="한국주택금융" title="한국주택금융공사" width="200px" height="auto">
-					</div>&nbsp;
-					<div class="botwrite" style="position: relative; left -10px; top: -10px;">
+					</div>
+					<div class="botwrite">
 						<span style="color: #FFC314;"><strong>레시피</strong></span><br>
 						<span><strong>어묵전 부치기 냉장고 파먹기 만든 집에서 간단한 술안주</strong></span><br>
 						<span class="box">요즘 요리를 하다보니 이것저것 남은것이 많네요. 어묵도 어정쩡하게 남았고, 짜투리채소도 넘 많고요. 그래서 냉장고 파먹기도 할겸 남은 채소와 어묵으로 어묵전을 부쳤어요 그래서 맛있는 요리가 완성 되었답니다 ㅎㅎ</span>
 						<span>철든철부지 &#183;<span style="color: gray">2주일 전</span></span><br>
 					</div>
 				</div>
-				<p>
 				<div class="bot_story">
 					<div class="botimg">
 						<img style="display: block;" src="./img/con_sub3.jpg" alt="한국주택금융" title="한국주택금융공사" width="200px" height="auto">
-					</div>&nbsp;&nbsp;
-					<div class="botwrite" style="position: relative; left -10px; top: -10px;">
+					</div>
+					<div class="botwrite">
 						<span style="color: #FFC314;"><strong>레시피</strong></span><br>
 						<span><strong>라이스페이퍼요리 치즈어묵꼬치 사각어묵요리 집에서 맥주안주 만드는법</strong></span><br>
 						<span class="box">라이스페이퍼요리 치즈어묵꼬치 사각어묵요리 집에서 맥주안주 만드는법 몇일 전 인스타를 보다가 추전 피드에서 만들기는 간단하지만 맛있어 보이는 라이스페이퍼요리를 봣는데 너무 맛이 있었어요 여러분도 만들어 보세요 ㅎㅎ</span>
 						<span>초대리 &#183;<span style="color: gray">3일 전</span></span><br>
 					</div>
 				</div>
-				<p>
 				<div class="bot_story">
 					<div class="botimg">
 						<img style="display: block;" src="./img/con_sub4.jpg" alt="한국주택금융" title="한국주택금융공사" width="200px" height="auto">
-					</div>&nbsp;&nbsp;
-					<div class="botwrite" style="position: relative; left -10px; top: -10px;">
+					</div>
+					<div class="botwrite">
 						<span style="color: #FFC314;"><strong>레시피</strong></span><br>
 						<span><strong>박나래 어묵탕 끓이는법 소주안주 꼬치 어묵탕 레시피 매운어묵탕</strong></span><br>
 						<span class="box">박나래 어묵탕 끊이는법 소주안주 꼬치 어묵탕 레시피 매운 오뎅탕 끓이는법 사각어묵10장 가래떡 2줄 대파 썰은것 (1~2) 삻은달걀 1개 멸치 칼국수 라면 스프 2/3봉지 꽃게탕면 레시피 입니다 여러분도 만들어 보세요 정말 맜있습니다</span>
 						<span>은솔희섭mom&#183;<span style="color: gray">1개월 전</span></span><br>
 					</div>
 				</div>
-				<p>
 				<div class="bot_story">
 					<div class="botimg">
 						<img style="display: block;" src="./img/con_sub5.jpg" alt="한국주택금융" title="한국주택금융공사" width="200px" height="auto">
-					</div>&nbsp;&nbsp;
-					<div class="botwrite" style="position: relative; left -10px; top: -10px;">
+					</div>
+					<div class="botwrite">
 						<span style="color: #FFC314;"><strong>레시피</strong></span><br>
 						<span><strong>새송이버섯 버터 양념구이 술안주 요리(편스토랑 박솔미 레시피)</strong></span><br>
 						<span class="box">냉장고에 고기 구워 먹고 남은 새송이버섯. 평소 같으면 대충 썰어서 볶아 반찬으로 먹는 새송이버섯볶음을 만들었을 텐데 요즘 집에서 밥 먹는 일이 별로 없어 간단하게 먹을 술 안주가 필요 했는데 여러분들에게도 추천 합니다 맜있는 버섯구이에요</span>
