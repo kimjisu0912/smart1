@@ -19,11 +19,10 @@
 
 /* 네비게이션 목차 */
 /* 외부폰트 적용 */
-    @font-face {
+   @font-face {
     font-family: "TRWindRegular";
     font-style: normal;
-    font-weight: bold;
-    src: url('../TRWindRegular.woff') format('woff');
+    src: url('./TRWindRegular.woff') format('woff');
    }
    
 li {
@@ -33,20 +32,19 @@ li {
 }
 li > a{
 	display: block; /* 블록처리 */
-		width: 113px; 
-		height: 50px;
-		background: white; 
-		color: 	#000000; 
-		border: 1px solid #dcdcdc; 
-		font-size: 15px; 
-		font-family: "TRWindRegular", sans-serif;
-		text-align: center;
- 		padding-top: 10px; 
-		text-decoration: none; /* 선으로 텍스트 꾸미는 속성 none는 a태그 밑줄 선을 만들지 않는다 */
-	line-height: 50px; /* 텍스트 높낮이 위치 조절 */
+	width: 113px; 
+	height: 50px;
+	background: white; 
+	color: 	#000000; 
+	border: 1px solid #dcdcdc; 
+	font-size: 16px; 
+	font-family: "TRWindRegular", sans-serif;
+	text-align: center;
+	text-decoration: none; /* 선으로 텍스트 꾸미는 속성 none는 a태그 밑줄 선을 만들지 않는다 */
 }
 li > a > span {
-	display: block;
+	position: relative; /* 위치조정 */
+	top: 15px;
 }
 
 /* 마우스 오버 했을때 이벤트 */
@@ -69,7 +67,8 @@ li > a:hover {
 	
 }
 .circle1_sp1 {
-	line-height: 25px;
+	position: relative;
+	top: 1px;
 }
 .circle2 {
 	display: inline-block;
@@ -141,7 +140,6 @@ li > a:hover {
 }
 .botimg{
 	display: inline-block;
-	border: 0.5px solid gray;
 	margin: 0 auto;
 	padding: 0 auto;
 	position: relative; /* 위치조정 */
@@ -152,7 +150,6 @@ li > a:hover {
 	width: 700px;
 	height: auto;
 	margin: 10px;
-	border: 0.5px solid gray;
 	text-align: left;
 	position: relative !important;
 	top: -10px;
