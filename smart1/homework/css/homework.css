@@ -1,29 +1,34 @@
 /* 헤더 작업 시작 */
 .header {
+	width: 940px;
+	height: 100px;
+	text-align: left;
 	margin: 0 auto;
-	text-align: center;
+	padding: 0;
+	position: relative; 
+	left: -40px;
 }
-.headertit {
-	text-align: center;
-	position: relative; /* 위치조정 */
-	left: -25px;
-}
-.nav {
+.menu{
 	display: inline-block;
-	width: 100px;
-	height: 50px;
-	font-size: 16;
-/* 	margin-right: -4; 
-	padding: 0; */
+	margin: 0; 
+	padding: 0;
+	overflow: hidden; /* 넘쳐나는 메뉴 가리기 */
+	width: 960px;
+	height: 68px;
+}
+.top2{
+	display: inline-block;
+	font-size: 8pt;
+	color: gray; 
 }
 
 /* 네비게이션 목차 */
 /* 외부폰트 적용 */
-   @font-face {
-    font-family: "TRWindRegular";
-    font-style: normal;
-    src: url('./TRWindRegular.woff') format('woff');
-   }
+@font-face {
+ font-family: "TRWindRegular";
+ font-style: normal;
+ src: url('./TRWindRegular.woff') format('woff');
+}
    
 li {
 	float: left;
@@ -50,61 +55,76 @@ li > a > span {
 /* 마우스 오버 했을때 이벤트 */
 li > a:hover {
 	background: #FFC800; 
+	color: white;
 	text-decoration: none; /* 밑줄 제거 */
 } 
 
-/* 등그라미 버튼 */
+/* 등그라미 버튼으로 구현 */
 .circle1 {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
+	background-color: white;
 	border: 1px solid gray;
 	border-radius: 50%;
-	box-shadow: 1px 1px 1px 1px rgba(100, 100, 100, 0.2);
+	/* 그림자 줘보기 */
+	box-shadow: 2px 2px 2px 2px rgba(100, 100, 100, 0.2);
 	position: relative; /* 위치조정 */
-	top: -23px;
-	left: 60px;
+	top: 58px;
+	left: -400px;
 	
 }
+/* 좌측 동그라미 버튼 위치지정 */
 .circle1_sp1 {
+	font-size: 25px;
 	position: relative;
-	top: 1px;
+	top: -5px;
+	left: 7px;
 }
+
+/* 우측 동그라미 버튼 지정 */
 .circle2 {
 	display: inline-block;
 	position: relative; /* 위치조정 */
-	top: -10px;
-	left: -30px;
+	top: -48px;
+	left: 940px;
 	overflow: hidden; /* 이미지 부분만 나오게 하는 작업 */
 	height: 35px; 
 	width: 40px;
 }
 /* 헤더작업 끝 */
 
+
 /* 컨텐츠 시작 */
 .content {
 	margin: 0 auto;
 	text-align: center;
 }
+/* 컨텐츠 전체 설정 */
 .topstoryall{
 	display: inline-block;
 	width: 940px;
 	border-bottom: 1px solid gray;
 	text-align: left;
 }
+
+/* 상단컨첸츠 시작 */
 .left_story {
 	display: inline-block;
 }
+/* 상단 좌우 컨텐츠 스토리설정 */
 .left_write, .right_write {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
+/* 상단 좌우 컨텐츠 이미지 위에 시간표시 */
 .left_runtime, .right_runtime {
 	display: inline-block;
 	border: 0.5px solid gray; 
 	padding: 3px;
 	width: 30px; 
 	height: auto; 
+	text-align: center;
 	font-size: 13px;
 	color: white;
 	position: relative; 
@@ -113,6 +133,7 @@ li > a:hover {
 	background-color: black;
 	opacity: 0.7;	/* 배경투명도 설정 */
 }
+/* 상단 좌우 이미지에 화살표 표시 */
 .left_arrow, .right_arrow{
 	display: inline-block;
 	position: relative; /* 위치조정 */
@@ -122,15 +143,16 @@ li > a:hover {
 	height: 45px; 
 	width: 33px;
 }	
-
 .right_story {
 	display: inline-block;
 	position: relative; /* 위치조정 */
 	left: 15px;
 }
 
+/* 하단 컨텐츠 시작 */
 .botall{
 	display: inline-block;
+	margin-bottom: 10px;
 }
 .bot_story{
 	margin-top: 15px;
