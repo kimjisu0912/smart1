@@ -118,6 +118,7 @@ li > a:hover {
 	width: 940px;
 	border-bottom: 1px solid gray;
 	text-align: left;
+	margin-top: 20px;
 }
 
 /* 상단컨첸츠 시작 */
@@ -158,7 +159,7 @@ li > a:hover {
 .right_story {
 	display: inline-block;
 	position: relative; /* 위치조정 */
-	left: 15px;
+	left: 10px;
 }
 
 /* 하단 컨텐츠 시작 */
