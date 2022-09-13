@@ -21,7 +21,6 @@
 	font-size: 8pt;
 	color: gray; 
 }
-
 /* 네비게이션 목차 */
 /* 외부폰트 적용 */
 @font-face {
@@ -51,14 +50,12 @@ li > a > span {
 	position: relative; /* 위치조정 */
 	top: 15px;
 }
-
 /* 마우스 오버 했을때 이벤트 */
 li > a:hover {
 	background: #FFC800; 
 	color: white;
 	text-decoration: none; /* 밑줄 제거 */
 } 
-
 /* 백그라운드 이미지로 가져오기 */
 .gear {
 	display: inline-block;
@@ -70,7 +67,6 @@ li > a:hover {
 	width: 10px;
 	height: 10px;
 }
-
 /* 등그라미 버튼으로 구현 */
 .circle1 {
 	display: inline-block;
@@ -93,7 +89,6 @@ li > a:hover {
 	top: -5px;
 	left: 4px;
 }
-
 /* 우측 동그라미 버튼 지정 */
 .circle2 {
 	display: inline-block;
@@ -120,7 +115,6 @@ li > a:hover {
 	text-align: left;
 	margin-top: 20px;
 }
-
 /* 상단컨첸츠 시작 */
 .left_story {
 	display: inline-block;
