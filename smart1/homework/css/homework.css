@@ -2,19 +2,26 @@
 .header {
 	width: 940px;
 	height: 100px;
-	text-align: left;
+	text-align: center;
 	margin: 0 auto;
 	padding: 0;
-	position: relative; 
-	left: -40px;
+	/* position: relative; 
+	left: -40px; */
 }
 .menu{
 	display: inline-block;
 	margin: 0; 
 	padding: 0;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 	overflow: hidden; /* 넘쳐나는 메뉴 가리기 나중에 white-space 태그랑 연동*/
-	width: 960px;
+	width: 930px;
 	height: 68px;
+	font-size: 0pt;
+	position: relative;
+	top: 15px;
+	z-index: 2;
 }
 .top2{
 	display: inline-block;
@@ -28,15 +35,20 @@
  font-style: normal;
  src: url('./TRWindRegular.woff') format('woff');
 }
-   
+
+ul{
+	padding: 0px;	/* ul패딩값 0으로 설정 */
+}
+
 li {
-	float: left;
+	/* float: left; */
+	display: inline-block;
 	list-style:none; /* 목차를 가로로 */
 	margin: 0px;
 }
 li > a{
 	display: block; /* 블록처리 */
-	width: 113px; 
+	width: 114px; 
 	height: 50px;
 	background: white; 
 	color: 	#000000; 
@@ -73,13 +85,14 @@ li > a:hover {
 	width: 30px;
 	height: 30px;
 	background-color: white;
+	z-index: 3; /* 앞으로 보이기 위한 우선순위 값을 줌 */
 	border: 1px solid gray;
 	border-radius: 50%;
 	/* 그림자 줘보기 */
 	box-shadow: 2px 2px 2px 2px rgba(100, 100, 100, 0.2);
 	position: relative; /* 위치조정 */
 	top: 58px;
-	left: -405px;
+	left: -685px;
 	
 }
 /* 좌측 동그라미 버튼 위치지정 */
@@ -87,14 +100,15 @@ li > a:hover {
 	font-size: 25px;
 	position: relative;
 	top: -5px;
-	left: 4px;
+	left: 0px;
 }
 /* 우측 동그라미 버튼 지정 */
 .circle2 {
 	display: inline-block;
 	position: relative; /* 위치조정 */
 	top: -48px;
-	left: 940px;
+	left: 455px;
+	z-index: 4;
 	overflow: hidden; /* 이미지 부분만 나오게 하는 작업 */
 	height: 35px; 
 	width: 40px;
@@ -153,7 +167,7 @@ li > a:hover {
 .right_story {
 	display: inline-block;
 	position: relative; /* 위치조정 */
-	left: 10px;
+	left: 20px;
 }
 
 /* 하단 컨텐츠 시작 */
